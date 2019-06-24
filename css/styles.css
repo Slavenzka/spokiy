@@ -1,28 +1,28 @@
 @font-face {
   font-family: Roboto;
-  src: url("../../fonts/Roboto/Robotolight.woff") format("woff"), url("../../fonts/Roboto/Robotolight.woff2") format("woff2"), url("../../fonts/Roboto/Robotolight.ttf") format("ttf");
+  src: url("../fonts/Roboto/Robotolight.woff") format("woff"), url("../fonts/Roboto/Robotolight.woff2") format("woff2"), url("../../fonts/Roboto/Robotolight.ttf") format("ttf");
   font-style: normal; }
 
 @font-face {
   font-family: Roboto;
-  src: url("../../fonts/Roboto/Roboto.woff") format("woff"), url("../../fonts/Roboto/Roboto.woff2") format("woff2"), url("../../fonts/Roboto/Roboto.ttf") format("ttf");
+  src: url("../fonts/Roboto/Roboto.woff") format("woff"), url("../fonts/Roboto/Roboto.woff2") format("woff2"), url("../../fonts/Roboto/Roboto.ttf") format("ttf");
   font-style: normal;
   font-weight: 500; }
 
 @font-face {
   font-family: Roboto;
-  src: url("../../fonts/Roboto/Robotobold.woff") format("woff"), url("../../fonts/Roboto/Robotobold.woff2") format("woff2"), url("../../fonts/Roboto/Robotobold.ttf") format("ttf");
+  src: url("../fonts/Roboto/Robotobold.woff") format("woff"), url("../fonts/Roboto/Robotobold.woff2") format("woff2"), url("../../fonts/Roboto/Robotobold.ttf") format("ttf");
   font-style: normal;
   font-weight: bold; }
 
 @font-face {
   font-family: Bitter;
-  src: url("../../fonts/Bitter/Bitter.woff") format("woff"), url("../../fonts/Bitter/Bitter.woff2") format("woff2"), url("../../fonts/Bitter/Bitter.ttf") format("ttf");
+  src: url("../fonts/Bitter/Bitter.woff") format("woff"), url("../fonts/Bitter/Bitter.woff2") format("woff2"), url("../../fonts/Bitter/Bitter.ttf") format("ttf");
   font-style: normal; }
 
 @font-face {
   font-family: Bitter;
-  src: url("../../fonts/Bitter/Bitterbold.woff") format("woff"), url("../../fonts/Bitter/Bitterbold.woff2") format("woff2"), url("../../fonts/Bitter/Bitterbold.ttf") format("ttf");
+  src: url("../fonts/Bitter/Bitterbold.woff") format("woff"), url("../fonts/Bitter/Bitterbold.woff2") format("woff2"), url("../../fonts/Bitter/Bitterbold.ttf") format("ttf");
   font-style: normal;
   font-weight: bold; }
 
@@ -9790,15 +9790,21 @@ p {
   margin-right: 30px; }
 
 .img-block {
+  display: block;
   width: 100%;
   height: 100%;
   margin-bottom: 20px; }
 
+  .col-12.col-md-4.col-lg-3 > .img-block {
+    width: 100%;
+    height: 342px;
+  }
+
 .img-block img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain; }
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .pagination {
   border-radius: 0; }
@@ -11457,18 +11463,19 @@ p {
   margin-bottom: 30px; }
 
 .goods-item {
-  cursor: pointer;
   width: 100%;
   display: inline-block;
   margin-bottom: 30px; }
 
 .goods-item .goods-img {
+  display: block;
   background-color: #f4f4f4;
   margin-bottom: 20px; }
 
 .goods-item .goods-img img {
   width: 100%;
   height: 100%;
+  height: 215px;
   -o-object-fit: contain;
   object-fit: contain; }
 
@@ -12107,4 +12114,6 @@ p {
 
 @media all and (max-width: 992px) {
   .form-block {
-    margin-top: 20px; } }
+    margin-top: 20px;
+  }
+}
