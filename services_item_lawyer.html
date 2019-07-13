@@ -385,6 +385,54 @@
         </div>
     </div>
 </footer></main>
+
+<div class="popup">
+  <div class="popup__content">
+    <button class="popup__close" type="button">
+      Закрыть модальное окно
+    </button>
+    <div class="popup__frame">
+      <img
+        class="popup__img"
+        src="img/modal/image-for-callback2.png"
+        alt="Иллюстрация модального окна"
+      />
+    </div>
+    <div class="popup__wrapper">
+      <p class="popup__caption">
+        Хотите заказать услугу?
+      </p>
+      <p class="popup__descriptor">
+        Перезвоните на один из номеров ниже или оставьте свой номер телефона,
+        чтобы мы перезвонили Вам. Наши номера:
+      </p>
+      <ul class="popup__list">
+        <li class="popup__item">
+          +38 (044) 539-00-57
+        </li>
+        <li class="popup__item">
+          +38 (067) 6-888-007
+        </li>
+        <li class="popup__item">
+          +38 (067) 6-888-007
+        </li>
+        <li class="popup__item">
+          +38 (067) 6-888-007
+        </li>
+      </ul>
+      <form action="#">
+        <label class="popup__label" for="input-phone">Ваш номер:</label>
+        <input class="popup__input" type="tel" id="input-phone" placeholder="+3 8(">
+        <button class="popup__send" type="submit">
+          <span>
+          Заказать звонок
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -392,5 +440,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="js/common.min.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/imask.js"></script>
+<script>
+  const element = document.querySelector('.popup__input');
+  const maskOptions = {
+    mask: '+{38}(000)000-00-00'
+  };
+  const mask = IMask(element, maskOptions);
+</script>
 </body>
 </html>
